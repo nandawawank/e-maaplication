@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">e-ma aplication</string>
+    <string name="menu_logout">Logout</string>
+    <string name="info">Tentang</string>
+</resources>
