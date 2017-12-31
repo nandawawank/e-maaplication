@@ -9,6 +9,13 @@
 
         </item>
         <item
+            android:id="@+id/id_login"
+            android:drawableLeft="@drawable/ic_login"
+            android:title="@string/login"
+            android:onClick="Login">
+
+        </item>
+        <item
             android:id="@+id/id_logout"
             android:drawableLeft="@drawable/ic_logout"
             android:title="@string/menu_logout"

@@ -1,11 +1,15 @@
 package com.madwak.e_maaplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 
 import com.madwak.e_maaplication.R;
@@ -78,6 +82,21 @@ public class MainActivity extends AppCompatActivity {
         list.add(new Event("thsin", "Pontianak", "27 appril","uas","","",""));
 
         return list;
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        MenuInflater menuInflater = getMenuInflater();
+        menuInflater.inflate(R.menu.menu, menu);
+        return true;
+
+    }
+
+    public void Login(MenuItem item) {
+        Intent login = new Intent(MainActivity.this, Login.class);
+        MainActivity.this.startActivity(login);
     }
 }
 
