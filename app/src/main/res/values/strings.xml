@@ -3,4 +3,9 @@
     <string name="menu_logout">Logout</string>
     <string name="info">Tentang</string>
     <string name="login">Login DKM</string>
+    <string name="title_login">Form Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="btnLogin">Login</string>
+    <string name="registrasi">Registrasi</string>
 </resources>
