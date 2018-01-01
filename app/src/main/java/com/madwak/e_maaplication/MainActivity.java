@@ -6,13 +6,11 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
-import com.madwak.e_maaplication.R;
 import com.madwak.e_maaplication.network.RestClient;
 import com.pacific.adapter.RecyclerAdapter;
 import com.pacific.adapter.RecyclerAdapterHelper;
@@ -44,14 +42,14 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void show() {
-        adapter = new RecyclerAdapter<Event>(this, R.layout.event_row) {
+        adapter = new RecyclerAdapter<Event>(this, R.layout.event_list) {
             @Override
             protected void convert(RecyclerAdapterHelper helper, final Event data_task) {
                 final int position = helper.getAdapterPosition();
 
 //                Log.i(getTag(),"data task");
 //                helper.setImageUrl(R.id.img_task, data_task.getGambar());
-                helper.setText(R.id.judul_event, data_task.getNama_event());
+                helper.setText(R.id.nama_event, data_task.getNama_event());
 //                helper.setText(R.id.maps, data_task.getMap());
 
                 helper.setOnClickListener(R.id.cv_task, new View.OnClickListener() {

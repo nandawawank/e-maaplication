@@ -3,7 +3,6 @@ package com.madwak.e_maaplication;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.example.banglubzzz.salesmonitor.R;
 
 public class Login extends AppCompatActivity {
 
